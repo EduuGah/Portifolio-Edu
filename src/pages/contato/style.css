@@ -1,0 +1,31 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & span{
+    font-size: 20px;
+  }
+}
+
+.botaoCopiar{
+  padding: 10px 15px;
+  margin: 20px;
+  background-color: #4C2768;
+  color: #fff;
+  border: 2px solid #FF00B2;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(255, 0, 178, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.botaoCopiar:hover {
+  background-color: #FF00B2;
+  color: #1A032B;
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 0, 178, 0.4);
+}
