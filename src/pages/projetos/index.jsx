@@ -39,12 +39,12 @@ function Projetos() {
               <p>{projeto.descricao}</p>
               <div className="footer">
                 <a href={projeto.github}>
-                  <img src={github} alt="link Repositório" srcset="" />
-                  <span>github</span>
+                  <img src={github} alt="link Repositório" target="_blank" rel="noopener noreferrer"/>
+                  <span>GitHub</span>
                 </a>
-                <a href={projeto.vercel}>
+                <a href={projeto.vercel} target="_blank" rel="noopener noreferrer">
                   <img src={link} alt="" />
-                  <span>site</span>
+                  <span>Site</span>
                 </a>
               </div>
             </div>
