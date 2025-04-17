@@ -2,11 +2,16 @@ import './style.css'
 import foto from '../../assets/icon.png'
 import github from '../../assets/github.png'
 import instagram from '../../assets/instagram.png'
+import PurpleParticles from '../particulas/PurpleParticles';
+
 
 function App() {
   return (
     <>
-    <div className="container">
+
+      <PurpleParticles />
+      <div className="container">
+        {    <div className="container">
       <div className="navbar">
         <a href="#sobremim">Sobre Mim</a>
         <a href="#habilidades">Habilidades</a>
@@ -43,7 +48,8 @@ function App() {
   </div>
 </section>
 
-    </div>
+    </div>}
+      </div>
     </>
   )
 }
