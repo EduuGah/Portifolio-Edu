@@ -8,7 +8,7 @@ function Contato() {
     navigator.clipboard.writeText('edugah1809@gmail.com')
       .then(() => {
         setCopiado(true);
-        setTimeout(() => setCopiado(false), 2000); // Volta pra "Copiar" depois de 2s
+        setTimeout(() => setCopiado(false), 2000); 
       });
   };
 

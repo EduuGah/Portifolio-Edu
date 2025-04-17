@@ -5,6 +5,7 @@
 }
 
 .habilidades {
+  display: flex;
   width: 100%;
   padding: 40px 20px;
 }
@@ -12,26 +13,26 @@
 .habilidades-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
 
 .containerHabilidades {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   width: 80%;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
+
 #habilidadesTexto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  color: #fff;
+  flex: 1;
+  max-width: 500px;
 }
+
 
 #habilidadesTexto h1 {
   font-size: 60px;
@@ -85,11 +86,13 @@
 
 .iconsHabilidades {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto);  
   gap: 20px;
+  max-width: 50%;
   width: 100%;
-  max-width: 700px;
   justify-items: center;
+  align-self: center;
 }
 
 .icon {
@@ -119,8 +122,12 @@
   transform: scale(1.3);
 }
 
-/* Responsivo para tablets */
 @media (max-width: 1024px) {
+  .containerHabilidades {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   #habilidadesTexto h1 {
     font-size: 42px;
   }
@@ -138,44 +145,15 @@
   }
 }
 
-/* Responsivo para celulares */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerHabilidades {
-    width: 95%;
-  }
-
-  #habilidadesTexto {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-
-  #habilidadesTexto h1 {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  #habilidadesTexto h1 span {
-    font-size: 32px;
-  }
-
-  #habilidadesTexto p {
-    font-size: 16px;
-  }
-
-  #descricao {
-    font-size: 16px;
   }
 
   .iconsHabilidades {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  }
-
-  .icon {
-    width: 80px;
-    height: 80px;
-  }
-
-  .icon img {
-    width: 45%;
+    grid-template-rows: none;
+    max-width: 100%;
   }
 }

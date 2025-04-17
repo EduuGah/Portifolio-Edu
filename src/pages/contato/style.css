@@ -1,16 +1,29 @@
-.footer{
+#contato {
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  & span{
-    font-size: 20px;
-  }
+  justify-content: center;
+  width: 100%;
+  padding: 40px 20px; /* espaço interno para evitar que o conteúdo encoste na borda */
 }
 
-.botaoCopiar{
+footer {
+  display: flex;
+  flex-direction: row; /* empilha email e botão */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  gap: 15px;
+}
+
+footer span {
+  font-size: 20px;
+  word-break: break-all; /* permite que e-mails longos quebrem em telas pequenas */
+}
+
+.botaoCopiar {
   padding: 10px 15px;
-  margin: 20px;
   background-color: #4C2768;
   color: #fff;
   border: 2px solid #FF00B2;

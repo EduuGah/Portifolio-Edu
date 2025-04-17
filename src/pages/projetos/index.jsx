@@ -2,13 +2,18 @@ import './style.css';
 import projeto1 from '../../assets/projeto1.png';
 import projeto2 from '../../assets/projeto2.png';
 import projeto3 from '../../assets/projeto3.png';
+import github from '../../assets/github.png'
+import link from '../../assets/link.png';
+
 
 function Projetos() {
   const projetos = [
     {
       imagem: projeto1,
       titulo: 'Portfólio Pessoal',
-      descricao: 'Projeto pessoal criado em React com foco em responsividade e animações modernas.'
+      descricao: 'Projeto pessoal criado em React com foco em responsividade e organização.',
+      github: 'https://github.com/EduuGah/Portifolio-Edu',
+      vercel: 'https://edugah.com.br/'
     },
     {
       imagem: projeto2,
@@ -32,6 +37,16 @@ function Projetos() {
               <img src={projeto.imagem} alt={`Projeto ${i}`} />
               <h2>{projeto.titulo}</h2>
               <p>{projeto.descricao}</p>
+              <div className="footer">
+                <a href={projeto.github}>
+                  <img src={github} alt="link Repositório" srcset="" />
+                  <span>github</span>
+                </a>
+                <a href={projeto.vercel}>
+                  <img src={link} alt="" />
+                  <span>site</span>
+                </a>
+              </div>
             </div>
           ))}
         </div>

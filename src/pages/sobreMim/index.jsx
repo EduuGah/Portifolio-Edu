@@ -25,10 +25,10 @@ function App() {
       <p>
         Atualmente focando estudos em Front-End, usando HTML, CSS, e JavaScript como base, utilizando também tecnologias como NextJs e Figma para auxiliar no processo.
       </p>
-      <img src={foto} alt="fotoEdu" className='fotoEdu'/>
     </div>
 
     <div className="fotoElinks">
+    <img src={foto} alt="fotoEdu" className='fotoEdu'/>
       <div className="links">
         <a href="https://github.com/eduugah" target="_blank" rel="noopener noreferrer">
           <img src={github} alt="GitHub" />
