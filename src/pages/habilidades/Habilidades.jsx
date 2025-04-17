@@ -22,12 +22,12 @@ function Habilidades() {
 
 
   const descricoes = [
-    'HTML, uma das primeiras coisas que aprendi junto com CSS e JS',
-    'CSS, aprendi junto com HTML, para estilizar meus projetos',
-    'JavaScript, a primeira linguagem de programação de fato que aprendi, toda lógica de programação que sei, aprendi com ela',
-    'Python, por ser intuitiva e fácil de ser usada, gosto bastante de aprender e trabalhar com ela',
-    'React é uma biblioteca JS que uso para desenvolver interfaces de usuário, com ela consigo criar aplicações web de forma rápida e fácil',
-    'Figma, utilizo para o design ',
+    'HTML foi uma das primeiras coisas que aprendi, junto com CSS e JS.',
+    'CSS me ajuda a estilizar e dar vida aos projetos web.',
+    'JavaScript foi minha porta de entrada para a lógica de programação.',
+    'Python é intuitiva, gosto de aprender e trabalhar com ela.',
+    'React me permite criar interfaces web de forma rápida e eficiente.',
+    'Figma é a ferramenta que uso para criar e planejar meus designs.',
   ];
 
   const icons = [
@@ -46,7 +46,7 @@ function Habilidades() {
           <div id="habilidadesTexto">
             <h1><span>Habilidades</span></h1>
             <div className="descricao-wrapper">
-              <p id="descricao" key={animKey}>
+              <p id="descricao">
                 {descricaoIndex === null
                   ? '*Passe o mouse sobre o ícone*'
                   : descricoes[descricaoIndex]}

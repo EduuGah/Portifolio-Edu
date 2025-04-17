@@ -60,28 +60,18 @@
 }
 
 .descricao-wrapper {
-  position: relative;
-  min-height: 80px;
-  width: 100%;
+  min-height: unset;
+  height: auto;
+  overflow: visible;
   margin-top: 10px;
   margin-bottom: 20px;
-  overflow: hidden;
-  height: auto;
 }
 
 #descricao {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #fff;
-  font-size: 20px;
-  opacity: 0;
-  height: auto;
-  animation: fadeIn 0.5s forwards;
-  transition: opacity 0.5s ease-in-out;
-  word-break: break-word;
-  overflow-wrap: break-word;
+  position: static;
+  opacity: 1; /* remove o controle por JS já que não está mais absoluto */
+  animation: none; /* desativa a animação que não é mais necessária */
+  transition: none;
 
 }
 
