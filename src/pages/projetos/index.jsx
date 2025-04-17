@@ -17,12 +17,12 @@ function Projetos() {
     },
     {
       imagem: projeto2,
-      titulo: 'Landing Page de Produto',
+      titulo: 'FUTURO PROJETO',
       descricao: 'Landing page fictícia de um produto, desenvolvida com HTML, CSS e JavaScript puro.'
     },
     {
       imagem: projeto3,
-      titulo: 'Clone Netflix',
+      titulo: 'FUTURO PROJETO',
       descricao: 'Clone da interface do Netflix, usando React + Styled Components.'
     }
   ];
@@ -38,8 +38,8 @@ function Projetos() {
               <h2>{projeto.titulo}</h2>
               <p>{projeto.descricao}</p>
               <div className="footer">
-                <a href={projeto.github}>
-                  <img src={github} alt="link Repositório" target="_blank" rel="noopener noreferrer"/>
+                <a href={projeto.github} target="_blank" rel="noopener noreferrer">
+                  <img src={github} alt="link Repositório" />
                   <span>GitHub</span>
                 </a>
                 <a href={projeto.vercel} target="_blank" rel="noopener noreferrer">
