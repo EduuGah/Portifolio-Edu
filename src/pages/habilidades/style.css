@@ -56,6 +56,7 @@
   background-color: transparent;
   width: 100%;
   max-width: 700px;
+  height: auto;
 }
 
 .descricao-wrapper {
@@ -69,15 +70,19 @@
 }
 
 #descricao {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   color: #fff;
   font-size: 20px;
   opacity: 0;
+  height: auto;
   animation: fadeIn 0.5s forwards;
   transition: opacity 0.5s ease-in-out;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
 }
 
 @keyframes fadeIn {
@@ -157,5 +162,17 @@
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-template-rows: none;
     max-width: 100%;
+  }
+  #descricao {
+    font-size: 16px;
+  }
+
+  #habilidadesTexto p {
+    font-size: 16px;
+  }
+
+  .descricao-wrapper {
+    min-height: 100px;
+    max-height: none; /* permite expandir naturalmente */
   }
 }
