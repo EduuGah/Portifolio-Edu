@@ -1,14 +1,14 @@
 import { Project } from '../types';
-
+import projeto1 from '../photos/Projeto1.png'
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Landing Page em React',
-    description: 'Landing page moderna e responsiva desenvolvida com React, TypeScript e Tailwind CSS. Inclui animações suaves, tema escuro/claro e design otimizado para conversão.',
-    techs: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com/TROCAR/landing-page-react',
-    demo: 'https://landing-page-demo.com'
+    title: 'Previsão do Tempo',
+    description: 'Aplicativo de previsão do tempo para cidades do Brasil, com busca em tempo real, sugestões de cidades e exibição de temperatura, vento, umidade e descrição do clima.',
+    techs: ['React', 'TypeScript', 'Tailwind CSS', 'API OpenWeatherMap', 'API IBGE'],
+    image: projeto1,
+    github: 'https://github.com/EduuGah/previsao-tempo',
+    demo: 'https://previsao-tempo-smoky.vercel.app/'
   },
   {
     id: '2',
